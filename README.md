@@ -1,12 +1,10 @@
-Make a github account (share me the username).
-Downlad github desktop and login using the account.
-Check email for invitation to join collaboration.
-join the collaboration using the account that was shared to me.
-open github desktop and go to file.
-choose clone reprositary.
-choose "Couse-work" from the drop down menu.
-wait for it to clone
-choose current repository as "Course-work".
+#Islington 60% course work
+## things to do
+1. Make wireframe for unique page.
+2. Make html files for ``home,blog,product,research,aboutus``
+3. Functional form ( Contact us form)
+4. Main.css ,Css that will be inheritated by all of the pages (Things like bg color,nav bar color,font family which will be common for all pages)
+3. 
 
 
 
