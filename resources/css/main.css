@@ -1,20 +1,21 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #A1D6E2;
+    background-color: #ffffff;
   }
   /*Navigation*/
   nav {
     overflow: hidden;
-    background-color: #1995AD;
+    background-color: #ffffff;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 0 0px 10px rgba(36, 33, 33, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
   }
   /*Navigation ko button lai*/
   nav a, .menu{
     float: right;
     align-self: right;
-    color: #F1F1F2;
+    color: #000000;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -25,17 +26,41 @@ body {
     width: 25px;
   }
   nav a:hover,.menu:hover {
-    background-color:#11a9c8 ;
-    color: white;
+    color: rgb(255, 221, 0);
     border-radius: 20%;
+  }
+  /*nav ko menu ko lai*/
+  .menudrop{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-color: #0abde0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+  .menudrop a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .menudrop a:hover {
+    color: #f1f1f1;
   }
   
-  nav a.active {
-    background-color:#07caf1;
-    color: #F1F1F2;
-    border-radius: 20%;
+  .menudrop.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
-  /*Navigation ko menu wala*/
   
 
   
