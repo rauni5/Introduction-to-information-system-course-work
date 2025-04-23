@@ -2,30 +2,76 @@
 <html>
     <head>
         <title>Index.html</title>
+        <link rel="stylesheet" href="resources/css/promo.css">
         <link rel="stylesheet" href="resources/css/main.css">
         <script src="resources/Java/main.js"></script>
     </head>
     <body>
-    <nav>
-        <img class="menu" id="menu" src="resources/sources/Logos/menu_normal.png" onclick="openNav()">
-        
-        <a href="pages/Product.html">Product</a>
-        <a href="index.html">Home</a>
-        </nav>
+      <!--Nav ko starting-->
+      <nav id="navbar" class="transparent">
+        <div class="nav-left">
+          <div style="width: 40px;"></div>
+          <a href="#" class="menu" onclick="openNav(event)">&equiv;</a>
+          <div style="width: 20px;"></div>
+          <img src="resources/sources/Logos/Shopping_cart.png" class="nav-icon">
+        </div>
+          <img src="resources/sources/Logos/image.png" class="center-logo">
+        <div class="nav-right">
+          <img src="resources/sources/Logos/profile.png" class="nav-icon">
+          <div style="width: 40px;"></div>
+          <img src="resources/sources/Logos/Search.png" class="nav-icon">
+          <div style="width: 70px;"></div>
+        </div>
+      </nav>
         <section class="menudrop" id="menudrop">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="closemenu" href="#" onclick="closeNav(event)">&times;</a>
         <a href="pages/Blog.html">Blog</a>
         <a href="pages/Research.html">Research</a>
         <a href="pages/About_us.html">About us</a>
         </section>
+        <!--Nav ko ending-->
+        <!--Promo ko starting-->
+        <div class="promo-wrapper">
+          <div class="container">
+            <img src="resources/sources/Promoshoes.webp" alt="Spring Summer">
+          </div>
+          <div class="content">
+            <div class="subtitle">BABAL JUTA</div>
+            <div class="title">Running<br>jojjing</div>
+            <button class="shop-button">kin kin</button>
+          </div>
+        </div>
+        <div style="padding:15px 15px 2500px;font-size:30px">
+  <p><b>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b></p>
+  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaap
+  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaap</p>
+  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  </p>
+</div>
+
         <script>
-            function openNav() {
-              document.getElementById("menudrop").style.width = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("menudrop").style.width = "0";
-            }
+            function openNav(event) {
+            event.preventDefault(); 
+            document.getElementById("menudrop").style.width = "300px";
+        }
+        
+        function closeNav(event) {
+            event.preventDefault(); 
+            document.getElementById("menudrop").style.width = "0";
+        } 
+          const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+        navbar.classList.remove("transparent");
+        navbar.classList.add('scrolled');
+        } else {
+        navbar.classList.add("transparent");
+        navbar.classList.remove('scrolled');
+        }
+          });
+
             </script>
     </body>
 </html>
