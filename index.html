@@ -2,9 +2,13 @@
 <html>
     <head>
         <title>Index.html</title>
-        <link rel="stylesheet" href="resources/css/promo.css">
-        <link rel="stylesheet" href="resources/css/main.css">
-        <script src="resources/Java/main.js"></script>
+        <link rel="stylesheet" href="/resources/css/promo.css">
+        <link rel="stylesheet" href="/resources/css/main.css">
+        <link rel="stylesheet" href="/resources/css/footer.css">
+        <link rel="stylesheet" href="/resources/css/Catagory.css">
+        <link rel="stylesheet" href="/resources/css/New_arrivals.css">
+        <link rel="stylesheet" href="/resources/css/Team.css">
+        <script src="/resources/Java/main.js"></script>
     </head>
     <body>
       <!--Nav ko starting-->
@@ -13,54 +17,259 @@
           <div style="width: 40px;"></div>
           <a href="#" class="menu" onclick="openNav(event)">&equiv;</a>
           <div style="width: 20px;"></div>
-          <img src="resources/sources/Logos/Shopping_cart.png" class="nav-icon">
+          <img src="/resources/Imgs/Logos/Shopping_cart.png" class="nav-icon" onclick="opencart(event)">
         </div>
-          <img src="resources/sources/Logos/image.png" class="center-logo">
+          <img src="/resources/Imgs/Logos/image.png" class="center-logo">
         <div class="nav-right">
-          <img src="resources/sources/Logos/profile.png" class="nav-icon">
+          <img src="/resources/Imgs/Logos/profile.png" class="nav-icon">
           <div style="width: 40px;"></div>
-          <img src="resources/sources/Logos/Search.png" class="nav-icon">
+          <img src="/resources/Imgs/Logos/Search.png" class="nav-icon">
           <div style="width: 70px;"></div>
         </div>
       </nav>
-        <section class="menudrop" id="menudrop">
-            <a class="closemenu" href="#" onclick="closeNav(event)">&times;</a>
-        <a href="pages/Blog.html">Blog</a>
-        <a href="pages/Research.html">Research</a>
-        <a href="pages/About_us.html">About us</a>
-        </section>
+      <!--cart and menu-->
+      <section id="menudrop" class="menudrop">
+        <a class="closemenu" href="#" onclick="closeNav(event)">&times;</a>
+        <a href="#">Shop <span>&#8250;</span></a>
+        <a href="#">Blog <span>&#8250;</span></a>
+        <a href="#">Research <span>&#8250;</span></a>
+        <a href="#">About Us <span>&#8250;</span></a>
+        <a href="#">Contact Us <span>&#8250;</span></a>
+      </section>
+      <section id="cartdrop" class="cartdrop">
+        <a class="closemenu" href="#" onclick="closecart(event)">&times;</a>
+        <h2 style="padding:30px">SHOPPING CART</h2>
+        <article>
+          <img src="/resources/Imgs/Logos/Logo 1.jpg" alt="item">
+          <p style="width:100%;"><strong>MATRIX AIR</strong><br><small>1 × Rs 8,999</small></p>
+          <span style="cursor:pointer;">🗑️</span>
+        </article>
+        <article>
+          <img src="/resources/Imgs/Logos/Logo 1.jpg" alt="item" >
+          <p style="width:100%"><strong>SAMBA BLUE</strong><br><small>1 × Rs 18,999</small></p>
+          <span style="cursor:pointer;">🗑️</span>
+        </article>
+    
+        <p class="subtotal"><strong>Subtotal:</strong> <span>Rs 27,998</span></p>
+    
+        <button>View Cart</button><br>
+        <button>Checkout</button>
+      </section>
         <!--Nav ko ending-->
         <!--Promo ko starting-->
-        <div class="promo-wrapper">
+      <div class="promo-wrapper">
           <div class="container">
-            <img src="resources/sources/Promoshoes.webp" alt="Spring Summer">
+            <img src="/resources/Imgs/Logos/Promoshoes.webp" alt="Spring Summer">
           </div>
           <div class="content">
             <div class="subtitle">BABAL JUTA</div>
             <div class="title">Running<br>jojjing</div>
             <button class="shop-button">kin kin</button>
           </div>
-        </div>
-        <div style="padding:15px 15px 2500px;font-size:30px">
-  <p><b>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b></p>
-  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaap
-  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaap</p>
-  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-  </p>
-</div>
+      </div>
+        <!--Promotion ko end-->
+        <!--catagory starting-->
+      <section class="Catagories_section">
+        <h2>CATAGORIES</h2>
+        <div class="cata_container">
+          <div class="cata_card">
+            <div class="cata_img"></div>
+            <div class="cata_subtitle"><a href="/pages/Product.html"><strong><u>SHOP SPORTS</u></a></strong></div>
+          </div>
+          <div class="cata_card">
+            <div class="cata_img"></div>
+            <div class="cata_subtitle"><a href="/pages/Product.html"><strong><u>SHOP YEEZES</u></a></strong></div>
+          </div>
+          <div class="cata_card">
+            <div class="cata_img"></div>
+            <div class="cata_subtitle"><a href="/pages/Product.html"><strong><u>SHOP CASUAL</u></strong></a></div>
+          </div>
+        </div> 
+      </section>
+      <!--catagory ko ending-->
+      <!--New arrivals ko start-->
+      <section class="Newhead_section">
+        <h2>NEW ARRIVALS</h2>
+        <div class="Newhead_container">
+          <div class="Newhead_card">
+            <a href="pages/Product.html"><strong><u>ALL</u></strong></a>
+          </div>  
+          <div class="Newhead_card">
+            <a href="pages/Product.html"><strong><u>MEN</u></strong></a>
+          </div>
+          <div class="Newhead_card">
+            <a href="pages/Product.html"><strong><u>WOMEN</u></strong></a>
+          </div>
+          <div class="Newhead_card">
+            <a href="pages/Product.html"><strong><u>KIDS</u></strong></a>
+          </div>
+        </section>
+      <section class="New_section">
+        <div class="New_container">
+          <div class="New_card">
+            <div class="New_img"></div>
+            <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+            <div class="New_price"><strong>Rs. 1999</strong></div>
+          </div>
+          <div class="New_card">
+            <div class="New_img"></div>
+            <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+            <div class="New_price"><strong>Rs. 1999</strong></div>
+          </div> 
+          <div class="New_card">
+            <div class="New_img"></div>
+            <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+            <div class="New_price"><strong>Rs. 1999</strong></div>
+          </div> 
+          <div class="New_card">
+            <div class="New_img"></div>
+            <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+            <div class="New_price"><strong>Rs. 1999</strong></div>
+          </div>  
+        </section>
+        <section class="New_section">
+          <div class="New_container">
+            <div class="New_card">
+              <div class="New_img"></div>
+              <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+              <div class="New_price"><strong>Rs. 1999</strong></div>
+            </div>
+            <div class="New_card">
+              <div class="New_img"></div>
+              <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+              <div class="New_price"><strong>Rs. 1999</strong></div>
+            </div> 
+            <div class="New_card">
+              <div class="New_img"></div>
+              <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+              <div class="New_price"><strong>Rs. 1999</strong></div>
+            </div> 
+            <div class="New_card">
+              <div class="New_img"></div>
+              <div class="New_subtitle"><a href="/pages/Product.html"><strong>SHOP SPORTS</strong></a></div>
+              <div class="New_price"><strong>Rs. 1999</strong></div>
+            </div>  
+          </section>
+        <!--New arrivals ko ending-->
+        <!--the team ko start-->
+          <section class="team_section">
+            <div class="team_container">
+              <div class="team_card">
+                <div class="team_img"></div>
+              </div>
+              <div class="team_par">
+                <div class="team_title">THE TEAM</div>
+                <div class="team_subtitle">s simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+                <button class="explore-button"><a href="/pages/About_us.html">LEARN MORE</a></button>
+              </div>
+            </div>
+          </section>
+          
+        <!--The team ko end-->
+        <!--Blogs staring-->
+<section class="blogs_section">
+  <h2>Latest Blogs</h2>
+  <div class="blog_container">
+      <div class="blog_card">
+          <div class="blog_content">
+              <h3>PRODUCTS TO WATCH</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis ducimus nemo aut dolorum
+                  adipisci vel fugit necessitatibus quidem maiores..</p>
+              <button class="explore-button"><a href="/pages/Blog.html">Explore</button></a>
+          </div>
+      </div>
+
+      <!-- Second Blog Card -->
+      <div class="blog_card">
+          <div class="blog_content">
+              <h3>INSIDE JORDANS S1</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur aperiam cupiditate impedit
+                  ex? Distinctio!.</p>
+              <button class="explore-button"><a href="/pages/Blog.html">Explore</button></a>
+          </div>
+      </div>
+  </div>
+</section>
+<!--blogs ending-->
+
+<!-- Products Section with hovering -->
+<section class="products-section">
+  <div class="product-card">Running Shoes</div>
+  <div class="product-card">Yezzeys</div>
+  <div class="product-card">Sneakers</div>
+  <div class="product-card">Slippers</div>
+</section>
+
+<section class="our_network">
+  <h2>OUR NETWORK</h2>
+  <div class="network_gallery">
+  <img src="/resources/Imgs/footer/adidaslogo.jpg"alt="Adidas" width="100px">
+  <img src="/resources/Imgs/footer/nikelogo.jpg" alt="Nike" width="100px">
+  <img src="/resources/Imgs/footer/puma_logo.jpg" alt="Puma" width="100px">
+  <img src="/resources/Imgs/footer/new_balance.png" alt="NewBalance" width="100px">
+  </div>
+
+</section>
+
+
+
+<!-- Footer section about us & contacts-->
+<footer>
+  <div class="footer-container">
+      <div class="footer-column">
+          <img src="/resources/Imgs/Logos/image.png" alt="just a random logo" width="100px">
+          <!-- image to change -->
+      </div>
+  <div class="footer-column">
+      <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+
+  </div>
+  <div>
+     <p>Contact</p>
+     <p>Email</p>
+     <p>Blogs</p>
+  </div>
+  <div class="footer-column">
+      <p>+977-696969</p>
+      <p>juttapasal@gmail.com</p>
+      <div class="social-icons">  <!-- to appear the icons on the same line creating a seperate class -->
+      <img src="/resources/Imgs/footer/facebook-svgrepo-com.svg" alt="facebook" width="12px">
+      <img src="/resources/Imgs/footer/instagram-svgrepo-com.svg" alt="Instagram" width="20px">
+      <img src="/resources/Imgs/footer/twitter-svgrepo-com.svg" alt="Twitter" width="20px">
+      </div>
+      </div>
+    </div>
+    <div class="footer_rights">
+      <a>Fuck yu copyright</a>
+    </div>
+</footer>
 
         <script>
             function openNav(event) {
             event.preventDefault(); 
             document.getElementById("menudrop").style.width = "300px";
         }
+
         
         function closeNav(event) {
             event.preventDefault(); 
             document.getElementById("menudrop").style.width = "0";
+        }         
+
+        function closecart(event) {
+            event.preventDefault(); 
+            document.getElementById("cartdrop").style.width = "0";
         } 
+        function opencart(event) {
+            event.preventDefault(); 
+            document.getElementById("cartdrop").style.width = "400px";
+        }
           const navbar = document.getElementById("navbar");
         window.addEventListener("scroll", () => {
         if (window.scrollY > 0) {

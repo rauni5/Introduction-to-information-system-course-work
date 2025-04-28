@@ -1,0 +1,68 @@
+.team_section {
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+
+.team_container {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.team_section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222;
+}
+
+.team_card {
+    flex: 4;
+    overflow: hidden;
+    margin-left: 50px;
+    border-radius: 25px;
+}
+
+.team_img {
+    height: 500px;
+    background: url('/resources/Imgs/Logos/promo.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.team_par {
+    flex: 2;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_par .team_title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.team_par .team_subtitle {
+    text-align: left;
+    color: #555;
+    margin: 0 50px 30px 50px;
+    font-weight: normal;
+}
+
+.team_container .explore-button {
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+}
+.team_container .explore-button a{
+    color:black;
+    text-decoration: none;
+}
