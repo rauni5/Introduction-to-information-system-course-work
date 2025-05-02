@@ -24,13 +24,30 @@
     overflow: hidden;
     margin-bottom: 100px;
     margin: 10px;
+    transition: transform 0.3s ease;
     border-radius: 50px;
 }
-.New_img{
+.New_card:hover {
+    transform: translateY(-5px);
+}
+.Newhead_container .Newhead_card a:hover,.New_card:hover .New_subtitle a,.New_card:hover .New_price{
+    color: goldenrod;
+}
+.New_img {
     width: 300px;
     height: 300px;
     border-radius: 50px;
-    background:url('/resources/Imgs/Logos/promo.jpeg');
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.New_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Or use cover if you want cropping */
+    border-radius: 50px;
     cursor: pointer;
 }
 .New_card .New_subtitle{
@@ -56,7 +73,7 @@
 }
 .Newhead_container {
     display: flex;
-    gap: 5px;
+    gap: 90px;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;

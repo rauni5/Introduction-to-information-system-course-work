@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account.html</title>
+        <link rel="stylesheet" href="/resources/css/main.css">
+        <link rel="stylesheet" href="/resources/css/footer.css">
+        <script src="/resources/Java/main.js"></script>
+        <style>
+        .Title_section{
+        margin-bottom:10px;
+        margin-top:80px;
+        }
+        .Title{
+        display: flex; 
+        justify-content: center;    
+        align-content: flex-end;
+        }
+        .Title_section h2 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 45px;
+        color: #222;
+        }
+        .Title_sub{
+        display:flex;
+        gap:5px;
+        align-items: flex-end;
+        justify-content: center;
+        } 
+        </style>
+    </head>
+    <body>
+      <div class="main">
+      <!--Nav ko starting-->
+      <nav id="navbar" class="scrolled">
+        <div class="nav-left">
+          <div style="width: 40px;"></div>
+          <a style="cursor: pointer;" class="menu" onclick="openNav()">&equiv;</a>
+          <div style="width: 20px;"></div>
+          <img src="/resources/Imgs/Logos/Shopping_cart.png" class="nav-icon" onclick="opencart()">
+        </div>
+          <img src="/resources/Imgs/Logos/image.png" class="center-logo">
+        <div class="nav-right">
+          <a href="/pages/Account.html"><img src="/resources/Imgs/Logos/profile.png" class="nav-icon"></a>
+          <div style="width: 40px;"></div>
+          <img src="/resources/Imgs/Logos/Search.png" class="nav-icon">
+          <div style="width: 70px;"></div>
+        </div>
+      </nav>
+      <!--cart and menu-->
+      <section id="menudrop" class="menudrop">
+        <a class="closemenu" onclick="closeNav()">&times;</a>
+        <a href="/pages/Product.html">Shop <span>&#8250;</span></a>
+        <a href="/pages/Blog.html">Blog <span>&#8250;</span></a>
+        <a href="/pages/Research.html">Research <span>&#8250;</span></a>
+        <a href="/pages/About_us.html">About Us <span>&#8250;</span></a>
+        <a href="/pages/Contact_us.html">Contact Us <span>&#8250;</span></a>
+      </section>
+      <section id="cartdrop" class="cartdrop">
+        <a class="closemenu" onclick="closecart()">&times;</a>
+        <h2 style="padding:30px">SHOPPING CART</h2>
+        <article>
+          <img src="/resources/Imgs/Logos/Logo 1.jpg" alt="item">
+          <p style="width:100%;"><strong>MATRIX AIR</strong><br><small>1 × Rs 8,999</small></p>
+          <span style="cursor:pointer;">🗑️</span>
+        </article>
+        <article>
+          <img src="/resources/Imgs/Logos/Logo 1.jpg" alt="item" >
+          <p style="width:100%"><strong>SAMBA BLUE</strong><br><small>1 × Rs 18,999</small></p>
+          <span style="cursor:pointer;">🗑️</span>
+        </article>
+    
+        <p class="subtotal"><strong>Subtotal:</strong> <span>Rs 27,998</span></p>
+    
+        <button>View Cart</button><br>
+        <button>Checkout</button>
+      </section>
+        <!--Nav ko ending-->
+        <section class="Title_section">
+            <div class="Title"><h2>Account</h2></div>
+            <div class="Title_sub"><a href="/index.html" style="text-decoration: none;color: black;font-weight: bold;">Home</a><a>></a><a style="color: goldenrod;font-weight: bold;">Account</a></div>
+            </section>
+            <section style="display: flex; justify-content: center;">
+              <div style="margin-top: 20px;">
+                <h2 style="text-align: center;"><a id="logbtn"onclick="Login()" style="cursor: pointer;color:goldenrod;">Login</a> | <a id="registerbtn" onclick="Register()" style="cursor: pointer;color: black;">Register</a></h2>
+                <div id="Login" style="border: 2px solid black; width:600px; height:350px; justify-content: center; margin-bottom: 20px;">
+                    <form>
+                    <input type="text" placeholder="Username/Email" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold;padding-left: 20px;">
+                    <input type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight:bold;padding-left: 20px;">
+                    <div style="display: flex; justify-content: center;">
+                    <input type="checkbox" style="margin-top: 20px;margin-left:20px;border: 1px solid;"><a style="margin-left: 5px; margin-top: 20px;flex:1;font-weight: bold;">Remember me</a>
+                    <a style="margin-right: 20px; margin-top: 20px;font-weight:bold;">Forgot password?</a></div>
+                    <button style="margin-left: 20px; margin-top: 20px;width:90px;height:30px;border: 2px solid;font-weight: bold;background-color: none;">Login</button>
+                    </form>
+                </div>
+                <div id="Register" style="border: 2px solid black; width:600px; height:350px; justify-content: center; margin-bottom: 20px; display: none;">
+                    <form>
+                    <input type="text" placeholder="Username*" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold;padding-left: 20px;">
+                    <input type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold; padding-left: 20px;">
+                    <input type="Email" placeholder="Email*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold;padding-left: 20px;">
+                    <p style="margin: 20px; margin-bottom: 0px;font-weight: bold;">By registering, I agree to Akira's Privacy Policy and Terms of Use.
+                    </p>
+                    <button style="margin-left: 20px; margin-top: 20px;width:90px;height:30px;border: 2px solid;font-weight: bold;background-color: none;">Register</button>
+                    </form>
+                </div>
+            </div>
+            </section>
+
+        <!--Body content above this-->
+        </div>
+<!-- Footer section about us & contacts-->
+<footer>
+  <div class="footer-container">
+      <div class="footer-column">
+          <img src="/resources/Imgs/Logos/image.png" alt="just a random logo" width="200px">
+          <!-- image to change -->
+      </div>
+  <div class="footer-column">
+      <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+
+  </div>
+  <div>
+     <p>Contact</p>
+     <p>Email</p>
+     <p>Blogs</p>
+  </div>
+  <div class="footer-column">
+      <p>+977-696969</p>
+      <p>juttapasal@gmail.com</p>
+      <div class="social-icons">  <!-- to appear the icons on the same line creating a seperate class -->
+      <img src="/resources/Imgs/footer/facebook-svgrepo-com.svg" alt="facebook" width="12px">
+      <img src="/resources/Imgs/footer/instagram-svgrepo-com.svg" alt="Instagram" width="20px">
+      <img src="/resources/Imgs/footer/twitter-svgrepo-com.svg" alt="Twitter" width="20px">
+      </div>
+      </div>
+    </div>
+    <div class="footer_rights">
+      <a>Fuck yu copyright</a>
+    </div>
+</footer>
+
+        <script>
+             function Login(event) {
+            document.getElementById("Login").style.display = "block";
+            document.getElementById("Register").style.display = "none";
+            document.getElementById("logbtn").style.color="goldenrod";
+            document.getElementById("registerbtn").style.color="black";
+
+        }
+        function Register(event) {
+            document.getElementById("Register").style.display = "block";
+            document.getElementById("Login").style.display = "none";
+            document.getElementById("logbtn").style.color="black";
+            document.getElementById("registerbtn").style.color="goldenrod";
+        }
+        function openNav(event) {
+            document.getElementById("menudrop").style.width = "300px";
+        }
+        function closeNav(event) {
+            document.getElementById("menudrop").style.width = "0";
+        }         
+        function closecart(event) {
+            document.getElementById("cartdrop").style.width = "0";
+        } 
+        function opencart(event) {
+            document.getElementById("cartdrop").style.width = "400px";
+        }
+
+            </script>
+    </body>
+</html>
