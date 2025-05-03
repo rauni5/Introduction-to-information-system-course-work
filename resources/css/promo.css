@@ -40,6 +40,12 @@
     font-size: 18px;
     border: 2px solid #000;
     background-color: transparent;
+    transition: transform 0.3s ease;
     cursor: pointer;
     width: fit-content;
   }
+  .shop-button:hover {
+      transform: translateY(-5px);
+      color: goldenrod;
+  }
+  

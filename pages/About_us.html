@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>About_us.html</title>
-        <link rel="stylesheet" href="/resources/css/promo.css">
         <link rel="stylesheet" href="/resources/css/main.css">
         <link rel="stylesheet" href="/resources/css/footer.css">
         <script src="/resources/Java/main.js"></script>
@@ -13,29 +12,29 @@
       <nav id="navbar" class="transparent">
         <div class="nav-left">
           <div style="width: 40px;"></div>
-          <a href="#" class="menu" onclick="openNav(event)">&equiv;</a>
+          <a style="cursor: pointer;" class="menu" onclick="openNav()">&equiv;</a>
           <div style="width: 20px;"></div>
-          <img src="/resources/Imgs/Logos/Shopping_cart.png" class="nav-icon" onclick="opencart(event)">
+          <img src="/resources/Imgs/Logos/Shopping_cart.png" class="nav-icon" onclick="opencart()">
         </div>
           <img src="/resources/Imgs/Logos/image.png" class="center-logo">
         <div class="nav-right">
-          <img src="/resources/Imgs/Logos/profile.png" class="nav-icon">
+          <a href="/pages/Account.html"><img src="/resources/Imgs/Logos/profile.png" class="nav-icon"></a>
           <div style="width: 40px;"></div>
           <img src="/resources/Imgs/Logos/Search.png" class="nav-icon">
           <div style="width: 70px;"></div>
         </div>
       </nav>
       <!--cart and menu-->
-      <div id="menudrop" class="menudrop">
-        <a class="closemenu" href="#" onclick="closeNav(event)">&times;</a>
-        <a href="#">Shop <span>&#8250;</span></a>
-        <a href="#">Blog <span>&#8250;</span></a>
-        <a href="#">Research <span>&#8250;</span></a>
-        <a href="#">About Us <span>&#8250;</span></a>
-        <a href="#">Contact Us <span>&#8250;</span></a>
-      </div>
+      <section id="menudrop" class="menudrop">
+        <a class="closemenu"  onclick="closeNav()">&times;</a>
+        <a href="/pages/Product.html">Shop <span>&#8250;</span></a>
+        <a href="/pages/Blog.html">Blog <span>&#8250;</span></a>
+        <a href="/pages/Research.html">Research <span>&#8250;</span></a>
+        <a href="/pages/About_us.html">About Us <span>&#8250;</span></a>
+        <a href="/pages/Contact_us.html">Contact Us <span>&#8250;</span></a>
+      </section>
       <section id="cartdrop" class="cartdrop">
-        <a class="closemenu" href="#" onclick="closecart(event)">&times;</a>
+        <a class="closemenu"  onclick="closecart()">&times;</a>
         <h2 style="padding:30px">SHOPPING CART</h2>
         <article>
           <img src="/resources/Imgs/Logos/Logo 1.jpg" alt="item">
@@ -64,7 +63,7 @@
 <footer>
   <div class="footer-container">
       <div class="footer-column">
-          <img src="/resources/Imgs/Logos/image.png" alt="just a random logo" width="100px">
+          <img src="/resources/Imgs/Logos/image.png" alt="just a random logo" width="200px">
           <!-- image to change -->
       </div>
   <div class="footer-column">
@@ -94,38 +93,5 @@
       <a>Fuck yu copyright</a>
     </div>
 </footer>
-
-        <script>
-            function openNav(event) {
-            event.preventDefault(); 
-            document.getElementById("menudrop").style.width = "300px";
-        }
-
-        
-        function closeNav(event) {
-            event.preventDefault(); 
-            document.getElementById("menudrop").style.width = "0";
-        }         
-
-        function closecart(event) {
-            event.preventDefault(); 
-            document.getElementById("cartdrop").style.width = "0";
-        } 
-        function opencart(event) {
-            event.preventDefault(); 
-            document.getElementById("cartdrop").style.width = "400px";
-        }
-          const navbar = document.getElementById("navbar");
-        window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-        navbar.classList.remove("transparent");
-        navbar.classList.add('scrolled');
-        } else {
-        navbar.classList.add("transparent");
-        navbar.classList.remove('scrolled');
-        }
-          });
-
-            </script>
     </body>
 </html>

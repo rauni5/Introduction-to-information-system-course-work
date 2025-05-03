@@ -26,43 +26,58 @@
 
 .team_img {
     height: 500px;
-    background: url('/resources/Imgs/Logos/promo.jpeg');
-    background-size: cover;
-    background-position: center;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Or use cover if you want cropping */
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .team_par {
     flex: 2;
     overflow: hidden;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 70px;
+    margin-right:100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
 }
 
 .team_par .team_title {
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 40px;
     font-weight: bold;
 }
 .team_par .team_subtitle {
     text-align: left;
     color: #555;
-    margin: 0 50px 30px 50px;
+    margin-bottom: 30px;
+    margin-right: 140px;
     font-weight: normal;
 }
 
 .team_container .explore-button {
     border: 2px solid black;
     padding: 10px 20px;
+    width:140px;
     font-weight: bold;
     color: black;
 }
 .team_container .explore-button a{
     color:black;
     text-decoration: none;
+}
+.team_container .explore-button:hover a{
+   color:goldenrod
 }
