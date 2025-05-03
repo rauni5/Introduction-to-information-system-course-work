@@ -1,28 +1,32 @@
-function Login(event) {
+/*change login and register effect*/
+function Login() {
     document.getElementById("Login").style.display = "block";
     document.getElementById("Register").style.display = "none";
     document.getElementById("logbtn").style.color="goldenrod";
     document.getElementById("registerbtn").style.color="black";
 
 }
-function Register(event) {
+function Register() {
     document.getElementById("Register").style.display = "block";
     document.getElementById("Login").style.display = "none";
     document.getElementById("logbtn").style.color="black";
     document.getElementById("registerbtn").style.color="goldenrod";
 }
-function openNav(event) {
+/*menu effect*/
+function openNav() {
     document.getElementById("menudrop").style.width = "300px";
 }
-function closeNav(event) {
+function closeNav() {
     document.getElementById("menudrop").style.width = "0";
-}         
-function closecart(event) {
+}
+/*cart effect*/         
+function closecart() {
     document.getElementById("cartdrop").style.width = "0";
 } 
-function opencart(event) {
+function opencart() {
     document.getElementById("cartdrop").style.width = "400px";
 }
+/*Form import data and alert back*/
 function Loginfunction(){
    var x = document.getElementById("password").value;
    var y = document.getElementById("username").value;
