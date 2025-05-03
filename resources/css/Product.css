@@ -62,10 +62,12 @@
 .New_card {
     flex: 1;
     min-width: 300px;
-    max-width: 300px;
+    max-width: 310px;
+    border: 1px dashed gray;
     height: 425px;
     overflow: hidden;
     transition: 0.3s;
+    border-radius: 50px;
 }
 .New_img {
     width: 300px;

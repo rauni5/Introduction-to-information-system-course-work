@@ -69,6 +69,7 @@
     flex: 4;
     overflow: hidden;
     border-radius: 25px;
+    border: 1px dashed gray;
 }
 
 .team_img {
@@ -137,7 +138,7 @@
 
 .N_card {
     min-width: 200px;
-    max-width: 200px;
+    max-width: 210px;
     height: 270px;
     overflow: hidden;
     margin-bottom: 100px;
@@ -156,6 +157,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px dashed gray;
 }
 
 .N_img img {
@@ -194,6 +196,7 @@
     margin: 10px;
     transition: transform 0.3s ease;
     border-radius: 50px;
+    border: 1px dashed gray;
 }
 .New_card:hover {
     transform: translateY(-5px);
