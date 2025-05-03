@@ -23,3 +23,14 @@ function closecart(event) {
 function opencart(event) {
     document.getElementById("cartdrop").style.width = "400px";
 }
+function Loginfunction(){
+   var x = document.getElementById("password").value;
+   var y = document.getElementById("username").value;
+   alert("Login Details:\nYour username is :  "+y+ "\nYour passowrd is :  "+x);
+}
+function Registerfunction(){
+    var x = document.getElementById("password2").value;
+    var y = document.getElementById("username2").value;
+    var z = document.getElementById("Email").value;
+    alert("Registration Details:\nYour username is :  "+y+"\nYour Email is:  "+z+ "\nYour passowrd is :  "+x);
+ }

@@ -60,13 +60,13 @@
           <div>
         <h3 style="margin-bottom: 1px; margin-left: 20px;">Send Us an Inquiry.</h3>
         <p style="margin-top: 1px; margin-left: 20px;">Need Assistance or have a comment?Send us the message, we'll respond shortly!</p>
-        <form style=" margin-bottom: 20px; margin-left: 20px; ">
-            <input type="text" placeholder="Name" style="width:550px; height: 35px;" >
+        <form style="margin-bottom: 20px; margin-left: 20px;" onsubmit="contact()">
+            <input required id="name" type="text" placeholder="Name" style="width:550px; height: 35px;" >
             <br>
-            <input type="text" placeholder="Contact Number" style="width: 262px; height: 35px; margin-top: 20px;">
-            <input type="text" placeholder="Email" style="width: 264px; height: 35px; margin-left: 12px;"><br>
-            <input type="text" placeholder="Inquiry" style="width: 550px; height: 35px; margin-top: 20px;"><br>
-            <textarea placeholder="Message" style="width: 550px; height: 150px; resize: none; margin-top: 20px;"></textarea><br>
+            <input required id="Number" type="number" placeholder="Contact Number" style="width: 262px; height: 35px; margin-top: 20px;">
+            <input required id="Email" type="text" placeholder="Email" style="width: 264px; height: 35px; margin-left: 12px;"><br>
+            <input required id="Inquiry" type="text" placeholder="Inquiry" style="width: 550px; height: 35px; margin-top: 20px;"><br>
+            <textarea id="message" placeholder="Message" style="width: 550px; height: 150px; resize: none; margin-top: 20px;"></textarea><br>
             <button style="margin-top:12px; width: 555px; height: 35px;cursor:pointer;">
                 Send Message
             </button>
@@ -105,7 +105,7 @@
       </div>
     </div>
     <div class="footer_rights">
-      <a>Fuck yu copyright</a>
+      <a>2025 Akira NP,Inc. All rights reserved</a>
     </div>
 </footer>
         <script>
@@ -120,6 +120,14 @@
         } 
         function opencart(event) {
             document.getElementById("cartdrop").style.width = "400px";
+        }
+        function contact(){
+         var x = document.getElementById("Number").value;
+         var y = document.getElementById("name").value;
+         var z = document.getElementById("Email").value;
+         var xx = document.getElementById("Inquiry").value;
+         var xy = document.getElementById("message").value;
+         alert("Contact Us Details:\nYour username is :  "+y+"\nYour Email is:  "+z+ "\nYour Contact Number is:  "+x+"\nThe Inquary:  "+xx+"\nThe message:  "+xy);
         }
          </script>
     </body>

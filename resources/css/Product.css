@@ -80,7 +80,7 @@
 .New_img img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Makes full image visible without distortion */
+    object-fit: contain;
     border-radius: 10px;
 }
 .New_card .New_subtitle{
