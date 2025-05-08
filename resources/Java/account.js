@@ -1,4 +1,4 @@
-/*change login and register effect*/
+/*Change Login & Register Effects*/
 function Login() {
     document.getElementById("Login").style.display = "block";
     document.getElementById("Register").style.display = "none";
@@ -12,14 +12,14 @@ function Register() {
     document.getElementById("logbtn").style.color="black";
     document.getElementById("registerbtn").style.color="goldenrod";
 }
-/*menu effect*/
+/*Menu Effect*/
 function openNav() {
     document.getElementById("menudrop").style.width = "300px";
 }
 function closeNav() {
     document.getElementById("menudrop").style.width = "0";
 }
-/*cart effect*/         
+/*Cart Effect*/         
 function closecart() {
     document.getElementById("cartdrop").style.width = "0";
 } 

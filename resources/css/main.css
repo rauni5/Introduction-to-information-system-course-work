@@ -10,7 +10,7 @@ body {
   .main {
     flex: 1;
 }
-  /*Navigation ra placement*/
+  /*Navigation & Placement*/
   nav {
     position: fixed;
     top: 0;
@@ -62,7 +62,7 @@ body {
     background-color: transparent ;
     box-shadow: none ;
   }
-  /*nav ko menu ko lai*/
+  /*Navigation Menu*/
   .menudrop {
     white-space: nowrap;
     z-index: 3;
@@ -102,7 +102,7 @@ body {
     font-size: 30px;
     cursor: pointer;
   }
-  /*cart*/
+  /*Cart*/
   .cartdrop {
     white-space: nowrap;
     z-index: 3;
@@ -164,7 +164,7 @@ body {
   }
   
   
-  /*scroll changes ko*/
+  /*Scrolling Changes*/
   .scrolled {
     background-color: #ffffff;
     position: fixed;
