@@ -84,7 +84,7 @@
               <div style="margin-top: 20px;">
                 <h2 style="text-align: center;"><a id="logbtn"onclick="Login()" style="cursor: pointer;color:goldenrod;">Login</a> | <a id="registerbtn" onclick="Register()" style="cursor: pointer;color: black;">Register</a></h2>
                 <div id="Login" style="border: 2px solid black; width:600px; height:350px; justify-content: center; margin-bottom: 20px;">
-                    <form onsubmit="Loginfunction()">
+                    <form onsubmit="Loginfunction(event)">
                     <input required id="username" type="text" placeholder="Username/Email" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold;padding-left: 20px;">
                     <input required id="password" type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight:bold;padding-left: 20px;">
                     <div style="display: flex; justify-content: center;">
@@ -94,7 +94,7 @@
                     </form>
                 </div>
                 <div id="Register" style="border: 2px solid black; width:600px; height:350px; justify-content: center; margin-bottom: 20px; display: none;">
-                    <form onsubmit="Registerfunction()">
+                    <form onsubmit="Registerfunction(event)">
                     <input required id="username2" type="text" placeholder="Username*" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold;padding-left: 20px;">
                     <input required id="password2" type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold; padding-left: 20px;">
                     <input required id="Email" type="Email" placeholder="Email*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;border: 2px solid;font-weight: bold;padding-left: 20px;">

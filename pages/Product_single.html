@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../resources/css/footer.css">
         <link rel="stylesheet" href="../resources/css/Product_single.css">
         <script src="../resources/Java/main.js"></script>
+        <script src="../resources/Java/rating.js"></script>
     </head>
     <body>
       <div class="main">
@@ -146,8 +147,9 @@
               </p>
             </div>
             <h2 style="margin-bottom: 30px;margin-top: 40px;">Reviews (1)</h2>
-            <div style="display: flex;gap: 20px; margin-top: 40px;">
-              <div class="N_img" style="height:150px;width: 150px;"><img src="../resources/Imgs/Indivdual Product/Review image.jpg" style="border-radius: 100px;"></div>
+            <div id="rating">
+              <div style="display: flex;gap: 20px; margin-top: 40px;" >
+              <div class="N_img" style="height:150px;width: 150px;border: none;"><img src="../resources/Imgs/Indivdual Product/Review image.jpg" style="border-radius: 100px;"></div>
               <div>
                 <div style="font-size: 30px; color: black;">
                   ★ ★ ★ ☆ ☆ 
@@ -158,20 +160,19 @@
                 </strong></div>
               </div>
             </div>
+          </div>
             <div style="margin-top: 80px;">
               <h2 style="margin-bottom: 10px;">Add a Review</h2>
               <p style="margin-top: 10px;font-weight: bold;">Your email address will not be published. Required fields are marked * </p>
               <div style="color: black;">
                <a style="font-weight: bold;">Your review:</a> <a style="font-size: 25px;">☆ ☆ ☆ ☆ ☆</a>
               </div>
-              <form style="margin-bottom: 20px;">
-                  <input type="text" placeholder="Name*" style="width: 200px; height: 35px; margin-top: 20px;border: 2px solid black;font-weight: bold;">
-                  <input type="text" placeholder="Email*" style="width: 325px; height: 35px; margin-left: 12px;border: 2px solid black;font-weight: bold;"><br>
-                  <textarea placeholder="Your Review" style="width: 550px; height: 150px; resize: none; margin-top: 20px;border: 2px solid black;font-weight: bold;"></textarea><br>
-                  <button style="margin-top:12px; width: 90px; height: 35px;cursor:pointer;border: 2px solid black;background-color: transparent;font-weight: bold;">
+                  <input id="name" type="text" placeholder="Name*" style="width: 200px; height: 35px; margin-top: 20px;border: 2px solid black;font-weight: bold;">
+                  <input id="email" type="email" placeholder="Email*" style="width: 325px; height: 35px; margin-left: 12px;border: 2px solid black;font-weight: bold;"><br>
+                  <textarea id="review" placeholder="Your Review" style="width: 550px; height: 150px; resize: none; margin-top: 20px;border: 2px solid black;font-weight: bold;"></textarea><br>
+                  <button style="margin-top:12px; width: 90px; height: 35px;cursor:pointer;border: 2px solid black;background-color: transparent;font-weight: bold;" onclick="Addrating()">
                       Submit
                   </button>
-              </form>
             </div>
           </div>
           <section class="Newhead_section">

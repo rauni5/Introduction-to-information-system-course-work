@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../resources/css/footer.css">
         <link rel="stylesheet" href="../resources/css/blog_single.css">
         <script src="../resources/Java/main.js"></script>
+        <script src="../resources/Java/Comment.js"></script>
     </head>
     <body>
       <div class="main">
@@ -136,7 +137,7 @@
                   </div>
               </section>
               <div style="display:flex;justify-content: center;margin:30px;border-top: 2px solid black;border-bottom: 2px solid black;">
-                <p style="flex:10;font-weight: bold;font-size: 18px;">Author: Anju Yadav</p>
+                <p style="flex:10;font-weight: bold;font-size: 18px;">Author: Raunit  giri</p>
                 <div class="social-icons" style="flex:1;display:flex;gap: 20px;">
                   <img src="../resources/Imgs/footer/facebook-svgrepo-com.svg" alt="facebook" width="12px">
                   <img src="../resources/Imgs/footer/instagram-svgrepo-com.svg" alt="Instagram" width="20px">
@@ -145,8 +146,8 @@
               </div>
               <div style="margin:30px;">
                 <h2>2 Comments</h2>
-                <div style="height: 300px;border: 2px solid black;">
-                <section class="team_section"style="margin-top: 30px;margin-left:20px;">
+                <div style="height: fit-content;border: 2px solid black;" >
+                <section class="team_section"style="margin-top: 30px;margin-left:20px;"id="commentsec">
                   <div class="team_container2">
                     <div class="team_card" >
                       <div class="team_img2"><img src="../resources/Imgs/Indivudal blog/Comment 1.jpg" style="border-radius: 100%;"></div>
@@ -155,16 +156,16 @@
                       <div class="team_title">"Gained a lot of knowledge. Perfect blog for us.Customer support has been excellent and answered <br> every question we've
                         thrown at them with 12 hours.”
                         </div>
-                      <div class="team_subtitle">2 days ago, 26th March 2025</div>
+                      <div class="team_subtitle">1:70pm, 26th March 2025</div>
                     </div>
                   </div>
-                  <div class="team_container2"style="margin-top: 30px;margin-left:120px;">
+                  <div class="team_container2"style="margin-top: 30px;">
                     <div class="team_card">
                       <div class="team_img2"><img src="../resources/Imgs/Indivudal blog/Comment 2.jpg"style="border-radius: 100%;"></div>
                     </div>
                     <div class="team_par">
                       <div class="team_title">"An excellent read". Loved the ideas and explorations. Keep going!"</div>
-                      <div class="team_subtitle">45 minutes ago, 28th March 2025</div>
+                      <div class="team_subtitle">25:69am, 28th March 2025</div>
                     </div>
                   </div>
                   </section>
@@ -173,10 +174,10 @@
               <div style="margin: 30px;margin-top: 80px;">
                 <h2 style="margin-bottom: 10px;">Leave A Comment</h2>
                 <p style="margin-top: 10px;font-weight: bold;">Your email address will not be published. Required fields are marked * </p>
-                <form style="margin-bottom: 20px;" onsubmit="Addcomment()">
-                    <input id="Username" type="text" placeholder="Name*" style="width: 200px; height: 35px; margin-top: 20px;border: 2px solid black;font-weight: bold;">
-                    <input id="email" type="email" placeholder="Email*" style="width: 325px; height: 35px; margin-left: 12px;border: 2px solid black;font-weight: bold;"><br>
-                    <textarea id="comment" placeholder="Comment" style="width: 550px; height: 150px; resize: none; margin-top: 20px;border: 2px solid black;font-weight: bold;"></textarea><br>
+                <form style="margin-bottom: 20px;" onsubmit="Addcomment(event)">
+                    <input required id="Username" type="text" placeholder="Name*" style="width: 200px; height: 35px; margin-top: 20px;border: 2px solid black;font-weight: bold;">
+                    <input required id="email" type="email" placeholder="Email*" style="width: 325px; height: 35px; margin-left: 12px;border: 2px solid black;font-weight: bold;"><br>
+                    <textarea required id="commenttext" placeholder="Comment" style="width: 550px; height: 150px; resize: none; margin-top: 20px;border: 2px solid black;font-weight: bold;"></textarea><br>
                     <button style="margin-top:12px; width: 90px; height: 35px;cursor:pointer;border: 2px solid black;background-color: transparent;font-weight: bold;">
                         Send
                     </button>

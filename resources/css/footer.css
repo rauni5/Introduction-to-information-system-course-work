@@ -28,8 +28,6 @@ body {
     min-width: 500px;
     max-width: 600px;
     height: 450px;
-    background:
-        url('/resources/Imgs/Logos/shoe_promo.webp ');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,6 +47,7 @@ body {
     color: white;
     padding: 20px;
     width: 100%;
+    height:200px;
     border-radius: 0 0 10px 10px;
 }
 
@@ -62,9 +61,10 @@ body {
     font-size: 14px;
 }
 
-.explore-button {
+.blog_container a .explore-button {
     background: transparent; /* Fully transparent */
-    border: 2px solid white; /* White border */
+    border: 2px solid white; 
+    color: white;/* White border */
     padding: 8px 16px;
     border-radius: 5px;
     font-weight: bold;
@@ -72,12 +72,12 @@ body {
     transition: all 0.3s ease; /* Smooth transition for hover effects */
     outline: none; /* Removes default focus outline */
 }
-.explore-button a{
+.blog_container a{
     text-decoration: none;
     color:white;
 }
 /* Hover Effects */
-.explore-button:hover {
+.blog_container a .explore-button:hover {
     background: rgba(255, 255, 255, 0.1); /* Slight white tint on hover */
     transform: translateY(-2px); /* Subtle lift effect */
 }

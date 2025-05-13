@@ -27,14 +27,18 @@ function opencart() {
     document.getElementById("cartdrop").style.width = "400px";
 }
 /*Form import data and alert back*/
-function Loginfunction(){
+function Loginfunction(event){
+    event.preventDefault()
    var x = document.getElementById("password").value;
    var y = document.getElementById("username").value;
-   alert("Login Details:\nYour username is :  "+y+ "\nYour passowrd is :  "+x);
+   alert("Login Details:\nYour username is :  "+y+ "\nLogin successful\n redirecting to home page");
+   window.location.href = "../index.html";
 }
-function Registerfunction(){
+function Registerfunction(event){
+    event.preventDefault()
     var x = document.getElementById("password2").value;
     var y = document.getElementById("username2").value;
     var z = document.getElementById("Email").value;
-    alert("Registration Details:\nYour username is :  "+y+"\nYour Email is:  "+z+ "\nYour passowrd is :  "+x);
+    alert("Registration Details:\nYour username is :  "+y+"\nRegistration successful \n redirecting to home page ");
+    window.location.href = "../index.html";
  }
