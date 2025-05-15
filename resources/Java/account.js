@@ -31,14 +31,14 @@ function Loginfunction(event){
     event.preventDefault()
    var x = document.getElementById("password").value;
    var y = document.getElementById("username").value;
-   alert("Login Details:\nYour username is :  "+y+ "\nLogin successful\n redirecting to home page");
-   window.location.href = "../index.html";
+   alert("Your username is :  "+y+ "\nLogin successful\nRedirecting to home page");
+   location.href = "../index.html";
 }
 function Registerfunction(event){
     event.preventDefault()
     var x = document.getElementById("password2").value;
     var y = document.getElementById("username2").value;
     var z = document.getElementById("Email").value;
-    alert("Registration Details:\nYour username is :  "+y+"\nRegistration successful \n redirecting to home page ");
-    window.location.href = "../index.html";
+    alert("Your username is :  "+y+"\nRegistration successful \nredirecting to home page ");
+    location.href = "../index.html";
  }

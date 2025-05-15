@@ -70,14 +70,11 @@
             <div class="Catalog_title">
               <div class="rated"><a>TOP RATED</a></div>
               <div class="sort">
-                <select>
-                  <option hidden disabled selected>Sort By</option>
-                  <option>idk1</option>
-                  <option>idk2</option>
-                  <option>idk3</option>
-                  <option>idk4</option>
-                  <option>idk5</option>
-                  <option>idk6</option>
+                <select onchange="location.href='Product.html#'+value">
+                  <option hidden disabled selected>All</option>
+                  <option value="men">Men</option>
+                  <option value="women">Women</option>
+                  <option value="kids">Kids</option>
                 </select>
               </div>
             </div>
@@ -117,11 +114,8 @@
               <button style="background-color: pink"></button>
               </div>
             </div>
-            <div class="Catalog_container">
-              <section class="New_section">
-                <a href="#men">men</a>
-                <a href="#women">women</a>
-                <a href="#kids">kids</a>
+            <div class="Catalog_container"style="background-color: aliceblue; border:2px dashed #CCE7FF;">
+              <section class="New_section" >
                 <h1 style="text-align: center;font-size: 40px;" id="men">MEN</h1>
                 <div class="New_container" style="padding: 50px;border-radius: 100px;">
                   <div class="New_card">
@@ -179,7 +173,7 @@
                     </a>
                   </div>
                 </div>
-                  <h1 style="text-align: center;font-size: 40px;" id="women">WOMEN</h1>
+                  <h1 style="text-align: center;font-size: 40px; border-top: 2px dashed black; padding-top: 40px;" id="women">WOMEN</h1>
                 <div class="New_container">
                   <div class="New_card">
                     <a href="Product_single.html" style="text-decoration: none; color: black;">
@@ -236,7 +230,7 @@
                     </a>
                   </div>
                 </div>
-                <h1 style="text-align: center;font-size: 40px;" id="kids">KIDS</h1>
+                <h1 style="text-align: center;font-size: 40px; border-top: 2px dashed black; padding-top: 40px;" id="kids">KIDS</h1>
                 <div class="New_container">
                   <div class="New_card">
                     <a href="Product_single.html" style="text-decoration: none; color: black;">

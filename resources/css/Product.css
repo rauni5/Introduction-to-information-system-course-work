@@ -63,7 +63,7 @@
     flex: 1;
     min-width: 300px;
     max-width: 310px;
-    border: 1px dashed gray;
+    border: 1px dashed #004480;
     height: 425px;
     overflow: hidden;
     transition: 0.3s;
