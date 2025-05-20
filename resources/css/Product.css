@@ -158,7 +158,7 @@ table {
     height: 30px;
     font-size: 12px;
     border: 1px solid black;
-    background: none;
+    background: white;
     cursor: pointer;
     font-weight: bold;
 }

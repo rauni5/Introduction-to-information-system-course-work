@@ -1,9 +1,4 @@
 
-body {
-    background-color: #f8f8f8;
-    color: #333;
-}
-
 /* Blog Section Styles */
 .blogs_section {
     margin-bottom: 40px;
@@ -186,7 +181,7 @@ body {
     border: 1px solid black;
 }
 footer {
-    background-color: white;
+    background-color: #CCE7FF;
     padding-bottom: 0px;
     font-family: Arial, sans-serif;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
