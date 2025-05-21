@@ -49,7 +49,6 @@
     background-color: #ededed;
 }
 .New_section {
-    margin-bottom: 20px;
     margin-top: 20px;
 }
 .New_container {
@@ -63,7 +62,7 @@
     flex: 1;
     min-width: 300px;
     max-width: 310px;
-    border: 1px dashed #004480;
+    border: 2px dashed #0b84ed;
     height: 425px;
     overflow: hidden;
     transition: 0.3s;

@@ -73,6 +73,7 @@
     width:140px;
     font-weight: bold;
     color: black;
+    background-color: transparent;
 }
 .team_container .explore-button a{
     color:black;

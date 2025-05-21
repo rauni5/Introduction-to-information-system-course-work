@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: aliceblue;
+    background-color: rgb(255, 247, 238);
     color: #333;
     height:100%;
     min-height: 100vh;
@@ -165,7 +165,7 @@ body {
   
   /*Scrolling Changes*/
   .scrolled {
-    background-color: #CCE7FF;
+    background-color: rgb(255, 223, 187);
     position: fixed;
     top: 0;
     left: 0;

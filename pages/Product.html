@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Product.html</title>
+        <title>Products</title>
         <link rel="stylesheet" href="../resources/css/main.css">
         <link rel="stylesheet" href="../resources/css/footer.css">
         <link rel="stylesheet" href="../resources/css/Product.css">
@@ -10,6 +10,16 @@
           html {
           scroll-padding-top: 120px;
           scroll-behavior: smooth;
+        }
+        .Catalog_container{
+         background-color: #E5F3FF; 
+         border:2px dashed  rgb(255, 154, 38);
+        }
+         .women .New_card{
+          border:2px dashed  rgb(254, 130, 161);
+        }
+        .kid .New_card{
+         border:2px dashed  rgb(66, 255, 72);
         }
         </style>
     </head>
@@ -114,7 +124,7 @@
               <button style="background-color: pink"></button>
               </div>
             </div>
-            <div class="Catalog_container"style="background-color: #E5F3FF; border:2px dashed #CCE7FF;">
+            <div class="Catalog_container">
               <section class="New_section" >
                 <h1 style="text-align: center;font-size: 40px;" id="men">MEN</h1>
                 <div class="New_container" style="padding: 50px;border-radius: 100px;">
@@ -173,10 +183,11 @@
                     </a>
                   </div>
                 </div>
-                  <h1 style="text-align: center;font-size: 40px; border-top: 2px dashed black; padding-top: 40px;" id="women">WOMEN</h1>
+                <div class="women" style="background-color: rgb(255, 243, 246); padding-bottom:100px;">
+                  <h1 style="text-align: center;font-size: 40px; border-top:2px dashed  rgb(255, 154, 38); padding-top: 40px;" id="women">WOMEN</h1>
                 <div class="New_container">
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_women.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/new_arrivals_10.png" alt="Product" />
                       </div>
@@ -185,7 +196,7 @@
                     </a>
                   </div>
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_women.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/new_arrivals_12.png" alt="Product" />
                       </div>
@@ -194,7 +205,7 @@
                     </a>
                   </div>
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_women.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/new_arrivals_13.png" alt="Product" />
                       </div>
@@ -203,7 +214,7 @@
                     </a>
                   </div>
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_women.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/new_arrivals_14.png" alt="Product" />
                       </div>
@@ -212,7 +223,7 @@
                     </a>
                   </div>
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_women.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/New_arrivals_2.png" alt="Product" />
                       </div>
@@ -221,7 +232,7 @@
                     </a>
                   </div>
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_women.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/New_arrivals_3.png" alt="Product" />
                       </div>
@@ -230,10 +241,12 @@
                     </a>
                   </div>
                 </div>
-                <h1 style="text-align: center;font-size: 40px; border-top: 2px dashed black; padding-top: 40px;" id="kids">KIDS</h1>
+                </div>
+                <div class="kid" style="background-color: rgb(249, 255, 241);">
+                <h1 style="text-align: center;font-size: 40px; border-top:2px dashed  rgb(255, 154, 38); padding-top: 40px;margin-top: 0px;" id="kids">KIDS</h1>
                 <div class="New_container">
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_kid.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/New_arrivals_4.png" alt="Product" />
                       </div>
@@ -242,7 +255,7 @@
                     </a>
                   </div>
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_kid.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/New_arrivals_5.png" alt="Product" />
                       </div>
@@ -251,7 +264,7 @@
                     </a>
                   </div>
                   <div class="New_card">
-                    <a href="Product_single.html" style="text-decoration: none; color: black;">
+                    <a href="Product_single_kid.html" style="text-decoration: none; color: black;">
                       <div class="New_img">
                         <img src="../resources/Imgs/Shop/New_arrivals_8.png" alt="Product" />
                       </div>
@@ -260,14 +273,15 @@
                     </a>
                   </div>
                 </div>
+               </div>
               </section>
-              <div class="Catalog_containerNum" style="display: flex; justify-content: center; margin: 50px;gap:40px;">
+              <div class="Catalog_containerNum" style="display: flex; justify-content: center; padding: 50px;gap:40px;background-color: rgb(249, 255, 241);">
                 <button style="border-radius: 50%;color:white;background-color: black;width: 30px; height:30px;font-size: 20px;cursor:pointer;">1</button>
                 <button style="border-radius: 50%; width: 30px;background:none; height:30px;font-size: 20px;cursor: pointer;">2</button>
                 <button style="border-radius: 50%;width: 30px; height:30px;background:none;font-size: 20px;cursor: pointer;">3</button>
                 <button style="border-radius: 50%;width: 30px; height:30px;font-size: 20px;background:none;cursor: pointer;">4</button>
                 <button style="border-radius: 50%;width: 30px; height:30px;font-size: 20px;cursor: pointer;background:none;">5</button>
-              </div>
+              </div> 
             </div>
           </div>
           </section>
