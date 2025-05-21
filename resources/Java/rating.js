@@ -1,17 +1,9 @@
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 function Addrating(){
 const x = new Date();
-var hour=x.getHours();
-var min= x.getMinutes();
 var date = x.getDate();
 var month = months[x.getMonth()];
 var year = x.getFullYear();
-if(hour<=12){
-  var timeindex="am";
-}else{
-  var timeindex="pm";
-  hour -= 12;
-}
 var dateindex;
   switch (date) {
     case 1:
@@ -33,6 +25,7 @@ var dateindex;
 const a = document.getElementById("review").value;
 const b = document.getElementById("name").value;
 const c = document.getElementById("email").value;
+if(a!=""&&b!=""&&c!=""&&c.includes('@')){
 document.getElementById("rating").innerHTML+=`<div style="display: flex;gap: 20px; margin-top: 40px;" >
                 <div class="N_img" style="height:150px;width: 150px;border:none;"><img src="../resources/Imgs/Indivdual Product/Review image.jpg" style="border-radius: 100px;"></div>
               <div>
@@ -46,5 +39,9 @@ document.getElementById("rating").innerHTML+=`<div style="display: flex;gap: 20p
               `+a+`
                 </strong></div>
               </div></div>`;
-
 }
+else{
+        if(b==""){alert("Please enter Name");}
+        else if(c==""||!c.includes('@')){alert("Please enter Valid email");}
+        else{alert("Enter the Review");}
+}}

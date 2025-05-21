@@ -91,8 +91,8 @@
                 <h2 style="text-align: center;"><a id="logbtn"onclick="Login()" style="cursor: pointer;color:goldenrod;">Login</a> | <a id="registerbtn" onclick="Register()" style="cursor: pointer;color: black;">Register</a></h2>
                 <div id="Login" style="background-color: white;border-radius: 5px;border: 3px solid gray; font-weight: bold; width:600px; height:350px; justify-content: center; margin-bottom: 20px;">
                     <form onsubmit="Loginfunction(event)">
-                    <input required id="username" type="text" placeholder="Username/Email" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
-                    <input required id="password" type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
+                    <input id="username" type="text" placeholder="Username/Email" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
+                    <input id="password" type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
                     <div style="display: flex; justify-content: center;">
                     <input id="remember" type="checkbox" style="margin-top: 20px;margin-left:20px;border: 1px solid;"><a style="margin-left: 5px; margin-top: 20px;flex:1;font-weight: bold;">Remember me</a>
                     <a style="margin-right: 20px; margin-top: 20px;font-weight:bold;">Forgot password?</a></div>
@@ -101,9 +101,9 @@
                 </div>
                 <div id="Register" style="background-color: white;border: 2px solid black; width:600px; height:350px; justify-content: center; margin-bottom: 20px; display: none;">
                     <form onsubmit="Registerfunction(event)">
-                    <input required id="username2" type="text" placeholder="Username*" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
-                    <input required id="password2" type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px; padding-left: 20px;">
-                    <input required id="Email" type="Email" placeholder="Email*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
+                    <input id="username2" type="text" placeholder="Username*" style="margin-top: 50px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
+                    <input id="password2" type="password" placeholder="Password*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px; padding-left: 20px;">
+                    <input id="Email" type="text" placeholder="Email*" style="margin-top: 20px;margin-left:20px;width:540px;height: 40px;padding-left: 20px;">
                     <p style="margin: 20px; margin-bottom: 0px;font-weight: bold;">By registering, I agree to Akira's Privacy Policy and Terms of Use.
                     </p>
                     <button style="margin-left: 20px; margin-top: 20px;width:90px;height:30px;border: 2px solid gray;font-weight: bold;background-color: none;">Register</button>

@@ -28,17 +28,31 @@ function opencart() {
 }
 /*Form import data and alert back*/
 function Loginfunction(event){
-    event.preventDefault()
+   event.preventDefault();
    var x = document.getElementById("password").value;
    var y = document.getElementById("username").value;
+   if(x!=""&&y!=""){
    alert("Your username is :  "+y+ "\nLogin successful\nRedirecting to home page");
    location.href = "../index.html";
+    }
+    else{
+        if(y==""){alert("Please enter Username");}
+        else{alert("Please enter Password")}
+    }
 }
 function Registerfunction(event){
     event.preventDefault()
     var x = document.getElementById("password2").value;
     var y = document.getElementById("username2").value;
     var z = document.getElementById("Email").value;
+    if(x!=""&&y!=""&&z!=""&&z.includes('@')){
     alert("Your username is :  "+y+"\nRegistration successful \nredirecting to home page ");
     location.href = "../index.html";
+    }
+    else{
+        if(y==""){alert("Please enter Username");}
+        else if(x==""){alert("Please enter Password");}
+        else{alert("Enter a valid Email");}
+    }
+    
  }

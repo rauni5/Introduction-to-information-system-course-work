@@ -175,14 +175,12 @@
               <div style="margin: 30px;margin-top: 80px;">
                 <h2 style="margin-bottom: 10px;">Leave A Comment</h2>
                 <p style="margin-top: 10px;font-weight: bold;">Your email address will not be published. Required fields are marked * </p>
-                <form style="margin-bottom: 20px;" onsubmit="Addcomment(event)">
-                    <input required id="Username" type="text" placeholder="Name*" style="width: 200px; height: 35px; margin-top: 20px;border: 2px solid black;font-weight: bold;">
-                    <input required id="email" type="email" placeholder="Email*" style="width: 325px; height: 35px; margin-left: 12px;border: 2px solid black;font-weight: bold;"><br>
-                    <textarea required id="commenttext" placeholder="Comment" style="width: 550px; height: 150px; resize: none; margin-top: 20px;border: 2px solid black;font-weight: bold;"></textarea><br>
-                    <button style="margin-top:12px; width: 90px; height: 35px;cursor:pointer;border: 2px solid black;background-color: transparent;font-weight: bold;">
+                    <input  id="Username" type="text" placeholder="Name*" style="width: 200px; height: 35px; margin-top: 20px;border: 2px solid black;font-weight: bold;">
+                    <input id="email" type="email" placeholder="Email*" style="width: 325px; height: 35px; margin-left: 12px;border: 2px solid black;font-weight: bold;"><br>
+                    <textarea id="commenttext" placeholder="Comment" style="width: 550px; height: 150px; resize: none; margin-top: 20px;border: 2px solid black;font-weight: bold;"></textarea><br>
+                    <button  onclick="Addcomment()" style="margin-top:12px; width: 90px; height: 35px;cursor:pointer;border: 2px solid black;background-color: transparent;font-weight: bold;">
                         Send
                     </button>
-                </form>
               </div>
             </div>
             </div>
