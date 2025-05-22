@@ -1,18 +1,18 @@
-/*menu effect*/
+//Menu Effect
 function openNav() {
     document.getElementById("menudrop").style.width = "300px";
 }
 function closeNav() {
     document.getElementById("menudrop").style.width = "0";
 }
-/*cart effect*/         
+//Cart Effect         
 function closecart() {
     document.getElementById("cartdrop").style.width = "0";
 } 
 function opencart() {
     document.getElementById("cartdrop").style.width = "400px";
 }
-/*nav scroll effect*/
+//Nav Scroll Effect
 window.addEventListener("scroll", () => {
 if (window.scrollY > 0) {
     const navbar = document.getElementById("navbar");
