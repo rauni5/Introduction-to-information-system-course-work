@@ -49,7 +49,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 4px solid rgb(255, 153, 0);
     cursor: pointer;
 }
 .team_par .team_title {
