@@ -111,9 +111,7 @@ body {
     background-color: #fcfcfc;
     overflow-x: hidden;
     overflow-y: auto;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 60px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   }

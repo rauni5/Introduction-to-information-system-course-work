@@ -143,6 +143,7 @@ td:hover a{
 .team_container:hover{
     transform: translateY(-5px);
     color: goldenrod;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .team_img {

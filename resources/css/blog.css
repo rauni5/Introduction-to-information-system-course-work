@@ -36,7 +36,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
     border-radius: 25px;
-    background-color: #ededed;
+    background-color:  rgb(254, 230, 202);
 }
 .New_section {
     margin-bottom: 20px;
@@ -44,11 +44,14 @@
 }
 .New_container {
     display: flex;
+    margin-top: 30px;
     gap: 40px;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-
+button{
+    box-shadow: 0px 0px 3px black;
+}
 .New_card {
     min-width: 500px;
     max-width: 1000px;
@@ -145,6 +148,7 @@ td:hover a{
 .team_container:hover{
     transform: translateY(-5px);
     color: goldenrod;
+    box-shadow: 0px 0px 10px gray;
 }
 .team_img {
     height: 120px;

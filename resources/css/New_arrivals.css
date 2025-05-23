@@ -25,11 +25,12 @@
     overflow: hidden;
     margin-bottom: 100px;
     margin: 10px;
-    transition: transform 0.3s ease;
+    transition:0.3s ease;
     border-radius: 50px;
 }
 .New_card:hover {
     transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.799);
 }
 .Newhead_container .Newhead_card a:hover,.New_card:hover .New_subtitle a,.New_card:hover .New_price{
     color: goldenrod;
