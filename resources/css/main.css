@@ -27,8 +27,6 @@ body {
   .nav-left,
   .nav-right {
     display: flex;
-    align-items: center;
-    flex-shrink: 0;
   }
   .nav-icon {
     height: 40px;
