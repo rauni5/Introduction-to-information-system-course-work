@@ -121,11 +121,11 @@
             document.getElementById("cartdrop").style.width = "400px";
         }
         function contact(){
-         var x = document.getElementById("Number").value;
-         var y = document.getElementById("name").value;
-         var z = document.getElementById("Email").value;
-         var xx = document.getElementById("Inquiry").value;
-         var xy = document.getElementById("message").value;
+         const x = document.getElementById("Number").value;
+         const y = document.getElementById("name").value;
+         const z = document.getElementById("Email").value;
+         const xx = document.getElementById("Inquiry").value;
+         const xy = document.getElementById("message").value;
          if(x!=""&&y!=""&&z!=""&&z.includes('@')&&xx!=""){
         alert("Contact Us Details:\nYour username is :  "+y+"\nYour Email is:  "+z+ "\nYour Contact Number is:  "+x+"\nThe Inquary:  "+xx+"\nThe message:  "+xy);
         }
