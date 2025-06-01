@@ -57,15 +57,15 @@
 }
 
 .blog_container a .explore-button {
-    background: transparent; /* Fully transparent */
+    background: transparent; 
     border: 2px solid white; 
-    color: white;/* White border */
+    color: white;
     padding: 8px 16px;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    outline: none; /* Removes default focus outline */
+    transition: all 0.3s ease; 
+    outline: none; 
 }
 .blog_container a{
     text-decoration: none;
@@ -73,8 +73,7 @@
 }
 /* Hover Effects */
 .blog_container a .explore-button:hover {
-    background: rgba(255, 255, 255, 0.1); /* Slight white tint on hover */
-    transform: translateY(-2px); /* Subtle lift effect */
+    background: rgba(255, 255, 255, 0.1); 
 }
 
 /* Products Section Styles */

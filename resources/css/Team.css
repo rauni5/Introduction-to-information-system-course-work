@@ -43,7 +43,6 @@
 
 .team_par {
     flex: 2;
-    overflow: hidden;
     border-radius: 50px;
     margin-top: 70px;
     margin-right:100px;
@@ -63,7 +62,6 @@
     text-align: left;
     color: #555;
     margin-bottom: 30px;
-    margin-right: 140px;
     font-weight: normal;
 }
 
